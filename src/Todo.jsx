@@ -6,8 +6,10 @@
  * <Todo todo={todo} />
  */
 
+import { ShowTodos } from "./ShowTodos";
+
 export function Todo(props) {
   const { todo } = props;
 
-  return <div>To je Todo.jsx</div>;
+  return <div>{todo}</div>;
 }

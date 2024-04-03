@@ -5,8 +5,16 @@
  * <ShowTodos todos={todos} />
  */
 
+import { Todo } from "./Todo";
+
 export function ShowTodos(props) {
   const { todos } = props;
-
-  return <div>To je ShowTodos.jsx</div>;
+  // todos = ["task1", "task2"]
+  return (
+    <div>
+      {todos.map((todo) => (
+        <Todo todo={todo}></Todo>
+      ))}
+    </div>
+  );
 }
